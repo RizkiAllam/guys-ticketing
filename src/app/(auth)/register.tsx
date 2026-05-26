@@ -24,11 +24,11 @@ export default function RegisterScreen() {
     
     // Register with Supabase Auth
     const { data, error } = await supabase.auth.signUp({
-      email,
+      email: email.trim(),
       password,
       options: {
         data: {
-          full_name: fullName,
+          full_name: fullName.trim(),
         }
       }
     });
@@ -85,6 +85,7 @@ export default function RegisterScreen() {
               placeholder="Enter your email"
               keyboardType="email-address"
               autoCapitalize="none"
+              autoCorrect={false}
               value={email}
               onChangeText={setEmail}
             />
