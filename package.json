@@ -4,6 +4,7 @@
   "main": "expo-router/entry",
   "dependencies": {
     "@expo/metro-config": "~56.0.0",
+    "@expo/vector-icons": "^15.0.2",
     "@hookform/resolvers": "^5.4.0",
     "@shopify/react-native-skia": "2.6.2",
     "@supabase/supabase-js": "^2.106.2",

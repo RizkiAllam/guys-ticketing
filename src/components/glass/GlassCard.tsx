@@ -19,10 +19,7 @@ export const GlassCard: React.FC<GlassCardProps> = ({
   tint,
   ...props
 }) => {
-  // Ambil tema aktif dari NativeWind
   const { colorScheme } = useColorScheme();
-  
-  // Tentukan tint berdasarkan tema jika tidak dipaksa lewat props
   const activeTint = tint || (colorScheme === 'dark' ? 'dark' : 'light');
 
   return (
